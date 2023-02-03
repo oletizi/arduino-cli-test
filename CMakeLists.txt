@@ -1,0 +1,5 @@
+project(arduino-cli-test)
+cmake_minimum_required(VERSION 3.20)
+#include_directories("/Library/Arduino15/packages/teensy/hardware/avr/1.57.2/libraries/SD/src")
+#target_sources(SD "/Users/orion/Library/Arduino15/packages/teensy/hardware/avr/1.57.2/libraries/SD/src/SD.h")
+add_executable(arduino-cli-test arduino-cli-test.c)
