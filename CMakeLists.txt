@@ -6,6 +6,7 @@ set (TEENSY_ROOT "$ENV{HOME}/Library/Arduino15/packages/teensy/hardware/avr/1.57
 set (TEENSY_LIBS "$(TEENSY_ROOT)/libraries")
 include_directories(
         "$(TEENSY_ROOT)/cores/teensy4"
+        # This is super gross, but I can't seem to get the variables to work properly.
         "$ENV{HOME}/Library/Arduino15/packages/teensy/hardware/avr/1.57.2/libraries/SD/src"
         "$ENV{HOME}/Library/Arduino15/packages/teensy/hardware/avr/1.57.2/libraries/SPI"
         )
